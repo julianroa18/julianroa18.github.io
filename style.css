@@ -1,0 +1,304 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+:root
+{
+    --colorPrincipal: #ECF0F1;
+    --colorSecundario: #6e07f3;
+    --colorTexto: #2C3E50;
+}
+.header
+{
+    height:auto;
+    background-color: var(--colorSecundario);
+    padding: 1rem;
+}
+.header__nav
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.header__nav-item
+{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #ECF0F1;
+}
+.header__nav-link
+{
+    text-decoration: none;
+}
+.header__nav-link:link
+{
+    color: inherit;
+}
+.header__nav-link:visited
+{
+    color: inherit;
+}
+.header__nav-link:hover
+{
+    color: var(--colorTexto);
+}
+.main
+{
+    background-color: var(--colorPrincipal);
+    padding-top: 5rem;
+}
+.main__inicio
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__inicio-h1
+{
+    text-align: center;
+    font-size: 5rem;
+    font-family:'Courier New', Courier, monospace;
+    margin: 1rem 0;
+}
+.main__inicio-h2
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem 0;
+}
+.main__inicio-img
+{
+    width: 35%;
+    min-width: 15rem;
+    height: auto;
+}
+.main__about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__about-h1
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    margin: 1rem 0;
+}
+.main__about-p
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem 0;
+    padding: 0 10rem;
+}
+.main__table
+{
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 5rem 0;
+}
+.main__table-th
+{
+    border: 1px solid black;
+    font-size: 5rem;
+    color: #2C3E50
+}
+.main__table-td
+{
+    border: 1px solid black;
+    width: 33%;
+    text-align: center;
+    font-size: 2rem;
+}
+.main__table-img
+{
+    width: 90%;
+    margin-top: 1rem;
+}
+.main__proyectos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30rem;
+}
+.main__proyectos-h1
+{
+    text-align: center;
+    font-size: 5rem;
+    font-family:'Courier New', Courier, monospace;
+    margin: 1rem 0;
+}
+.main__proyectos-p
+{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1rem 0;
+    width: 70%;
+    min-width: 30rem;
+}
+.main__proyectos-div
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    width: 70%;
+    min-width: 30rem;
+}
+.main__proyectos-img
+{
+    width: 100%;
+    height: 100%;
+    min-width: 10rem;
+    padding: 0.5rem;
+}
+.main__contacto
+{
+    background-color: var(--colorSecundario);
+    height: 30rem;
+}
+.main__contacto-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #141c3a;
+    border: 2px solid #0d1b31;
+    border-radius: 4rem;
+    position: relative;
+    top: -250px;
+    margin: 0 auto;
+    width: 80%;
+
+}
+.main__contacto-text
+{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+.main__form 
+{
+    width: 100%;
+    max-width: 50rem;
+    background-color: #1f2c56;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main__form-label 
+{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+}
+input[type="text"], input[type="email"], .main__form-textarea 
+{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #333;
+}
+.main__form-textarea 
+{
+    resize: vertical; /* Permite ajustar la altura */
+    height: 10rem;
+}
+/* Estilo para el botón de envío */
+input[type="submit"] 
+{
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #5BE9B9;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Efecto al pasar el cursor por el botón */
+input[type="submit"]:hover 
+{
+    background-color: #5BE9B9;
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorSecundario);
+}
+.footer__title
+{
+    color: #ECF0F1;
+    font-size: 5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+.footer__socials
+{
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__socials-img
+{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 5rem;
+}
+h1, h2, p, span{
+    color: var(--colorTexto);
+}
+
+@media (max-width: 600px){
+    .main__about-p
+    {
+        padding: 0 5rem;
+    }
+    .main__table
+    {
+        width: 80%;
+    }
+    .main__proyectos-div
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main__contacto-text
+    {
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 380px){
+    .main__table-th
+    {
+        font-size: 3rem;
+    }
+    .main__table-td
+    {
+        font-size: 1rem;
+    }
+}
